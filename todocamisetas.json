@@ -1,0 +1,70 @@
+[
+{"type":"header","version":"5.2.1","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"todocamisetas"},
+{"type":"table","name":"camisetas","database":"todocamisetas","data":
+[
+{"id":"1","titulo":"Camiseta Barcelona","club":"FC Barcelona","pais":"España","tipo":"Local","color":"Azulgrana","precio":"79.99","detalles":"Camiseta oficial del Barcelona","codigo_producto":"BCN001","precio_oferta":"59.99"},
+{"id":"2","titulo":"Camiseta Real Madrid","club":"Real Madrid","pais":"España","tipo":"Visitante","color":"Blanco","precio":"89.99","detalles":"Camiseta oficial del Real Madrid","codigo_producto":"RM001","precio_oferta":"69.99"},
+{"id":"3","titulo":"Camiseta Manchester United","club":"Manchester United","pais":"Inglaterra","tipo":"Local","color":"Rojo","precio":"75.00","detalles":"Camiseta oficial del Manchester United","codigo_producto":"MU001","precio_oferta":"60.00"},
+{"id":"4","titulo":"Camiseta Juventus","club":"Juventus","pais":"Italia","tipo":"Visitante","color":"Negro","precio":"85.00","detalles":"Camiseta oficial de la Juventus","codigo_producto":"JUVE001","precio_oferta":"70.00"},
+{"id":"5","titulo":"Camiseta PSG","club":"Paris Saint-Germain","pais":"Francia","tipo":"Local","color":"Azul","precio":"95.00","detalles":"Camiseta oficial del PSG","codigo_producto":"PSG001","precio_oferta":"75.00"},
+{"id":"6","titulo":"Camiseta Bayern Munich","club":"Bayern Munich","pais":"Alemania","tipo":"Local","color":"Rojo","precio":"80.00","detalles":"Camiseta oficial del Bayern","codigo_producto":"BYN001","precio_oferta":"65.00"},
+{"id":"7","titulo":"Camiseta Boca Juniors","club":"Boca Juniors","pais":"Argentina","tipo":"Local","color":"Amarillo y Azul","precio":"70.00","detalles":"Camiseta oficial de Boca","codigo_producto":"BOCA001","precio_oferta":"55.00"},
+{"id":"8","titulo":"Camiseta River Plate","club":"River Plate","pais":"Argentina","tipo":"Visitante","color":"Blanco y Rojo","precio":"85.00","detalles":"Camiseta oficial de River Plate","codigo_producto":"RIVER001","precio_oferta":"67.00"},
+{"id":"9","titulo":"Camiseta Chivas","club":"Chivas","pais":"México","tipo":"Local","color":"Rojo y Blanco","precio":"65.00","detalles":"Camiseta oficial de Chivas","codigo_producto":"CHIVAS001","precio_oferta":"50.00"},
+{"id":"10","titulo":"Camiseta Flamengo","club":"Flamengo","pais":"Brasil","tipo":"Local","color":"Rojo y Negro","precio":"72.00","detalles":"Camiseta oficial de Flamengo","codigo_producto":"FLAM001","precio_oferta":"58.00"}
+]
+}
+,{"type":"table","name":"camiseta_tallas","database":"todocamisetas","data":
+[
+{"id":"1","camiseta_id":"1","talla_id":"1"},
+{"id":"2","camiseta_id":"1","talla_id":"2"},
+{"id":"3","camiseta_id":"1","talla_id":"3"},
+{"id":"4","camiseta_id":"2","talla_id":"3"},
+{"id":"5","camiseta_id":"2","talla_id":"4"},
+{"id":"6","camiseta_id":"3","talla_id":"2"},
+{"id":"7","camiseta_id":"3","talla_id":"3"},
+{"id":"8","camiseta_id":"4","talla_id":"4"},
+{"id":"9","camiseta_id":"4","talla_id":"5"},
+{"id":"10","camiseta_id":"5","talla_id":"1"},
+{"id":"11","camiseta_id":"5","talla_id":"2"},
+{"id":"12","camiseta_id":"6","talla_id":"3"},
+{"id":"13","camiseta_id":"6","talla_id":"4"},
+{"id":"15","camiseta_id":"7","talla_id":"2"},
+{"id":"14","camiseta_id":"7","talla_id":"5"},
+{"id":"16","camiseta_id":"8","talla_id":"4"},
+{"id":"17","camiseta_id":"8","talla_id":"5"},
+{"id":"18","camiseta_id":"9","talla_id":"1"},
+{"id":"19","camiseta_id":"9","talla_id":"2"},
+{"id":"20","camiseta_id":"10","talla_id":"3"}
+]
+}
+,{"type":"table","name":"clientes","database":"todocamisetas","data":
+[
+{"id":"1","nombre_comercial":"Tienda Futbol","rut":"12345678-9","direccion":"Av. Siempre Viva 123","categoria":"regular","contacto_nombre":"Juan Pérez","contacto_email":"juan@tiendafutbol.cl","porcentaje_oferta":"10.00"},
+{"id":"2","nombre_comercial":"Camisetas Store","rut":"98765432-1","direccion":"Calle Falsa 456","categoria":"premium","contacto_nombre":"Maria Gómez","contacto_email":"maria@camisetasstore.cl","porcentaje_oferta":"15.00"},
+{"id":"3","nombre_comercial":"Deportes Chile","rut":"13579246-3","direccion":"Calle Central 789","categoria":"vip","contacto_nombre":"Pedro Fernández","contacto_email":"pedro@deporteschile.cl","porcentaje_oferta":"20.00"},
+{"id":"4","nombre_comercial":"Futbol Mania","rut":"24681357-0","direccion":"Av. Libertador 101","categoria":"regular","contacto_nombre":"Laura González","contacto_email":"laura@futbolmania.cl","porcentaje_oferta":"5.00"},
+{"id":"5","nombre_comercial":"Camisetas Fanaticos","rut":"54321678-9","direccion":"Calle del Sol 123","categoria":"premium","contacto_nombre":"Carlos Torres","contacto_email":"carlos@fanaticos.cl","porcentaje_oferta":"25.00"},
+{"id":"6","nombre_comercial":"Red Sports","rut":"45678901-2","direccion":"Calle 2 Norte 456","categoria":"vip","contacto_nombre":"Ana Martínez","contacto_email":"ana@redsports.cl","porcentaje_oferta":"30.00"},
+{"id":"7","nombre_comercial":"Futbol World","rut":"87654321-0","direccion":"Calle de la Paz 101","categoria":"regular","contacto_nombre":"Luis Pérez","contacto_email":"luis@futbolworld.cl","porcentaje_oferta":"8.00"},
+{"id":"8","nombre_comercial":"Mega Camisetas","rut":"11223344-5","direccion":"Calle Nueva 234","categoria":"premium","contacto_nombre":"Raúl Sánchez","contacto_email":"raul@megacamisetas.cl","porcentaje_oferta":"12.00"},
+{"id":"9","nombre_comercial":"Camisetas Pro","rut":"22334455-6","direccion":"Calle Real 345","categoria":"vip","contacto_nombre":"Elena Rodríguez","contacto_email":"elena@camisetaspro.cl","porcentaje_oferta":"18.00"},
+{"id":"10","nombre_comercial":"Futbol Total","rut":"99887766-7","direccion":"Av. Los Deportes 555","categoria":"regular","contacto_nombre":"Jorge Herrera","contacto_email":"jorge@futboltotal.cl","porcentaje_oferta":"7.00"}
+]
+}
+,{"type":"table","name":"tallas","database":"todocamisetas","data":
+[
+{"id":"3","nombre":"L"},
+{"id":"8","nombre":"L-2"},
+{"id":"2","nombre":"M"},
+{"id":"7","nombre":"M-2"},
+{"id":"1","nombre":"S"},
+{"id":"9","nombre":"S-2"},
+{"id":"4","nombre":"XL"},
+{"id":"10","nombre":"XL-2"},
+{"id":"6","nombre":"XS"},
+{"id":"5","nombre":"XXL"}
+]
+}
+]

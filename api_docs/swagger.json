@@ -1,0 +1,270 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "API TodoCamisetas",
+    "version": "1.0.0",
+    "description": "Documentación de la API RESTful para el sistema de gestión de camisetas TodoCamisetas"
+  },
+  "servers": [
+    {
+      "url": "http://localhost/todocamisetas-backend/public",
+      "description": "Servidor local en XAMPP"
+    }
+  ],
+  "paths": {
+    "/camisetas": {
+      "get": {
+        "summary": "Listar todas las camisetas",
+        "responses": {
+          "200": {
+            "description": "Lista de camisetas",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": { "$ref": "#/components/schemas/Camiseta" }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Crear una nueva camiseta",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Camiseta" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Camiseta creada" },
+          "400": { "description": "Error de validación" }
+        }
+      }
+    },
+    "/camisetas/{id}": {
+      "get": {
+        "summary": "Obtener una camiseta por ID",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "integer" }
+          },
+          {
+            "name": "cliente_id",
+            "in": "query",
+            "required": false,
+            "schema": { "type": "integer" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Camiseta encontrada",
+            "content": {
+              "application/json": {
+                "schema": { "$ref": "#/components/schemas/Camiseta" }
+              }
+            }
+          },
+          "404": { "description": "Camiseta no encontrada" }
+        }
+      },
+      "put": {
+        "summary": "Actualizar una camiseta",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Camiseta" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Camiseta actualizada" }
+        }
+      },
+      "delete": {
+        "summary": "Eliminar una camiseta",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "responses": {
+          "200": { "description": "Camiseta eliminada" },
+          "404": { "description": "No encontrada" }
+        }
+      }
+    },
+
+    "/clientes": {
+      "get": {
+        "summary": "Listar todos los clientes",
+        "responses": {
+          "200": {
+            "description": "Lista de clientes",
+            "content": {
+              "application/json": {
+                "schema": { "type": "array", "items": { "$ref": "#/components/schemas/Cliente" } }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Crear un cliente",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Cliente" }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Cliente creado" },
+          "400": { "description": "Error de validación" }
+        }
+      }
+    },
+    "/clientes/{id}": {
+      "get": {
+        "summary": "Obtener un cliente por ID",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "responses": {
+          "200": { "description": "Cliente encontrado" },
+          "404": { "description": "No encontrado" }
+        }
+      },
+      "put": {
+        "summary": "Actualizar un cliente",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": { "$ref": "#/components/schemas/Cliente" }
+            }
+          }
+        },
+        "responses": {
+          "200": { "description": "Cliente actualizado" }
+        }
+      },
+      "delete": {
+        "summary": "Eliminar un cliente",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "responses": {
+          "200": { "description": "Cliente eliminado" }
+        }
+      }
+    },
+
+    "/tallas": {
+      "get": {
+        "summary": "Listar todas las tallas",
+        "responses": {
+          "200": {
+            "description": "Lista de tallas",
+            "content": {
+              "application/json": {
+                "schema": { "type": "array", "items": { "$ref": "#/components/schemas/Talla" } }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Crear una talla",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nombre": { "type": "string" }
+                },
+                "required": ["nombre"]
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Talla creada" }
+        }
+      }
+    },
+    "/tallas/{id}": {
+      "get": {
+        "summary": "Obtener una talla por ID",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "responses": {
+          "200": { "description": "Talla encontrada" },
+          "404": { "description": "No encontrada" }
+        }
+      },
+      "delete": {
+        "summary": "Eliminar una talla",
+        "parameters": [
+          { "name": "id", "in": "path", "required": true, "schema": { "type": "integer" } }
+        ],
+        "responses": {
+          "200": { "description": "Talla eliminada" }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Camiseta": {
+        "type": "object",
+        "properties": {
+          "titulo": { "type": "string" },
+          "club": { "type": "string" },
+          "pais": { "type": "string" },
+          "tipo": { "type": "string" },
+          "color": { "type": "string" },
+          "precio": { "type": "number" },
+          "detalles": { "type": "string" },
+          "codigo_producto": { "type": "string" },
+          "precio_oferta": { "type": "number" }
+        },
+        "required": ["titulo", "precio", "codigo_producto"]
+      },
+      "Cliente": {
+        "type": "object",
+        "properties": {
+          "nombre_comercial": { "type": "string" },
+          "rut": { "type": "string" },
+          "direccion": { "type": "string" },
+          "categoria": { "type": "string", "enum": ["regular", "premium", "vip"] },
+          "contacto_nombre": { "type": "string" },
+          "contacto_email": { "type": "string" },
+          "porcentaje_oferta": { "type": "number" }
+        },
+        "required": ["nombre_comercial", "rut", "categoria"]
+      },
+      "Talla": {
+        "type": "object",
+        "properties": {
+          "nombre": { "type": "string" }
+        }
+      }
+    }
+  }
+}

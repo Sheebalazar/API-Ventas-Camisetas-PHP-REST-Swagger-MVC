@@ -1,0 +1,521 @@
+{
+	"info": {
+		"_postman_id": "a4002f59-41df-4a1e-967b-8cc11704e00b",
+		"name": "todocamisetas_backend",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43801966",
+		"_collection_link": "https://efren-4907564.postman.co/workspace/efren-'s-Workspace~10da0c18-f91b-4448-8c8e-fa1269048bb7/collection/43801966-a4002f59-41df-4a1e-967b-8cc11704e00b?action=share&source=collection_link&creator=43801966"
+	},
+	"item": [
+		{
+			"name": "camiseta",
+			"item": [
+				{
+					"name": "camiseta",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/camisetas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"camisetas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "camiseta ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/camisetas/1?cliente_id=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"camisetas",
+								"1"
+							],
+							"query": [
+								{
+									"key": "cliente_id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "camiseta POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Camiseta New York\",\r\n  \"club\": \"New York FC\",\r\n  \"pais\": \"USA\",\r\n  \"tipo\": \"Local\",\r\n  \"color\": \"Azul\",\r\n  \"precio\": \"85.00\",\r\n  \"detalles\": \"Camiseta oficial New York FC\",\r\n  \"codigo_producto\": \"NYC00100\",\r\n  \"precio_oferta\": \"65.00\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/camisetas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"camisetas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "camiseta PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"titulo\": \"Cccccamiseta Barcelona Actualizada\",\r\n  \"club\": \"FC Barcelona\",\r\n  \"pais\": \"España\",\r\n  \"tipo\": \"Local\",\r\n  \"color\": \"Azulgrana\",\r\n  \"precio\": \"79.99\",\r\n  \"detalles\": \"Camiseta oficial del Barcelona - Nueva edición\",\r\n  \"codigo_producto\": \"cccBCN001\",\r\n  \"precio_oferta\": \"59.99\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/camisetas/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"camisetas",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "camiseta PATCH",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\r\n    \"precio\": 500000\r\n\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/camisetas/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"camisetas",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "camiseta DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/camisetas/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"camisetas",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cliente",
+			"item": [
+				{
+					"name": "Cliente",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/clientes/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"clientes",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre_comercial\": \"ccCamisetas Global\",\r\n  \"rut\": \"11523354-5\",\r\n  \"direccion\": \"Calle Falsa 123ooo\",\r\n  \"categoria\": \"premium\",\r\n  \"contacto_nombre\": \"Carlos Torres\",\r\n  \"contacto_email\": \"carlos@camisetasglobal.cl\",\r\n  \"porcentaje_oferta\": \"15\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre_comercial\": \"fffCamisetas Global\",\r\n  \"rut\": \"11523054-5\",\r\n  \"direccion\": \"Calle Falsa 123ooo\",\r\n  \"categoria\": \"premium\",\r\n  \"contacto_nombre\": \"Carlos Torres\",\r\n  \"contacto_email\": \"carlos@camisetasglobal.cl\",\r\n  \"porcentaje_oferta\": \"15\"\r\n}\r\n\r\n\r\n\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/clientes/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"clientes",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente PATCH",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"porcentaje_oferta\": \"18\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/clientes/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"clientes",
+								"13"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cliente DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/clientes/13",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"clientes",
+								"13"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Talla",
+			"item": [
+				{
+					"name": "Talla",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/tallas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"tallas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Talla ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/tallas/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"tallas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Talla POST",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"L4\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/tallas",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"tallas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Talla PUT",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"L42\"\r\n}\r\n\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/tallas/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"tallas",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Talla PATCH",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"nombre\": \"L42\"\r\n}\r\n\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/tallas/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"tallas",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Talla DELETE",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost/todocamisetas-backend/public/tallas/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"path": [
+								"todocamisetas-backend",
+								"public",
+								"tallas",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
